@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slides" id="slides">
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')">
+                    <div class="slide-content">
+                        <h2>Mountain Adventure</h2>
+                        <p>Discover breathtaking landscapes and serene mountain peaks</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')">
+                    <div class="slide-content">
+                        <h2>Ocean Paradise</h2>
+                        <p>Experience the tranquility of crystal clear waters</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')">
+                    <div class="slide-content">
+                        <h2>Forest Journey</h2>
+                        <p>Immerse yourself in the beauty of ancient woodlands</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')">
+                    <div class="slide-content">
+                        <h2>Desert Dreams</h2>
+                        <p>Witness the magnificent beauty of endless golden dunes</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1464822759844-d150baef493e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')">
+                    <div class="slide-content">
+                        <h2>Alpine Wonder</h2>
+                        <p>Experience the majestic beauty of snow-capped peaks</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="nav-btn prev-btn" onclick="changeSlide(-1)">‹</button>
+            <button class="nav-btn next-btn" onclick="changeSlide(1)">›</button>
+        </div>
+        
+        <div class="indicators" id="indicators"></div>
+        
+        <div class="controls">
+            <button class="play-pause-btn" id="playPauseBtn" onclick="toggleAutoPlay()">Pause</button>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
